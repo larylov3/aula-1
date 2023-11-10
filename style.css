@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+img scr {
+    margin: 20%;
+}
 .container {
     width: 60%;
     margin: 0 auto;
