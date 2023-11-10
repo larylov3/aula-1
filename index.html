@@ -8,34 +8,59 @@
 </head>
 <body>
     <header>
-        <h1>Supernatural Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Supernatural Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="banner">
         <img src="banner.jpg" alt="Banner da Loja">
     </section>
 
-    <section class="produtos">
-        <article>
-            <img src="camiseta.jpg" alt="Camiseta Supernatural">
-            <h2>Camiseta Winchester Bros</h2>
-            <p>Camiseta inspirada na série Supernatural.</p>
-            <p class="preco">R$ 39,90</p>
-            <button>Adicionar ao Carrinho</button>
-        </article>
+    <section class="products" id="products">
+        <div class="container">
+            <article>
+                <img src="camiseta.jpg" alt="Camiseta Supernatural">
+                <h2>Camiseta Winchester Bros</h2>
+                <p>Camiseta inspirada na série Supernatural.</p>
+                <p class="price">R$ 39,90</p>
+                <button>Add to Cart</button>
+            </article>
 
-        <!-- Adicione mais artigos conforme necessário -->
+            <!-- Adicione mais artigos conforme necessário -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Envie-nos uma mensagem se tiver alguma dúvida ou comentário.</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Supernatural Store. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2023 Supernatural Store. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
